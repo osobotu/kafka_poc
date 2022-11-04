@@ -1,0 +1,9 @@
+{
+  "name": "kafka-poc",
+  "version": "0.0.1",
+  "description": "a test project to integrate kafka into flutter using sockets and kafkajs",
+  "dependencies": {
+    "kafkajs": "^2.2.2",
+    "socket.io": "^4.5.3"
+  }
+}
