@@ -2,8 +2,6 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:socket_io_client/socket_io_client.dart' as IO;
-import 'package:socket_io_client/socket_io_client.dart';
-import 'package:web_socket_channel/web_socket_channel.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lime,
       ),
-      home: const MyHomePage(title: 'Flutter + SocketIO + KafkaJS'),
+      home: const MyHomePage(title: 'Flutter + SocketIO + Kafka'),
     );
   }
 }
@@ -44,8 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void connectAndListen() {
-    IO.Socket socket = IO.io('http://localhost:3000',
-        OptionBuilder().setTransports(['websocket']).build());
+    IO.Socket socket = IO.io(
+      'http://localhost:3000',
+      IO.OptionBuilder()
+          .setTransports(['websocket'])
+          .enableAutoConnect()
+          .build(),
+    );
 
     // socket.onConnect((_) {
     //   print('connect');
