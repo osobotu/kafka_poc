@@ -23,3 +23,5 @@ To run the project:
 - Open yet another terminal (LOL 😜), run `cd client/flutter_kafkajs && flutter run`
 
 You should have a Flutter app running like so 👇🏾.
+
+![Running app GIF](https://github.com/osobotu/kafka_poc/Simulator-Screen-Recording-iPhone-14-Pro-Max-2022-11-08-at-14.09.30.gif)
