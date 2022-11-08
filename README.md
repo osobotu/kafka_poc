@@ -24,4 +24,4 @@ To run the project:
 
 You should have a Flutter app running like so 👇🏾.
 
-![Running app GIF](https://github.com/osobotu/kafka_poc/blob/main/Simulator-Screen-Recording-iPhone-14-Pro-Max-2022-11-08-at-14.09.30.gif)
+![Running app GIF](https://www.kapwing.com/videos/636a5949b86bae002544e4b4)
